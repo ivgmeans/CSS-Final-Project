@@ -1,0 +1,202 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #912aff, #5e97dd, #0486ff, #00dfd8);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Basic styling for the navigation */
+nav {
+    background-color: #010f20;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0; /* Liquid padding */
+}
+
+nav ul li {
+    margin-right: 2%; /* Liquid margin */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f894ff;
+}
+
+/* Styling for the header */
+header {
+    text-align: center;
+    background-color: #010f20; /* Background color for the header */
+    padding: 1% 0; /* Liquid padding */
+}
+
+header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem; /* Reduced font size */
+    margin-bottom: 1%; /* Liquid margin */
+    color: white;
+    text-align: left;
+    padding-left: 2%; /* Liquid padding */
+}
+
+header h2 {
+    font-size: 2vw; /* Liquid font size */
+    font-family: "Dancing Script", cursive;
+    margin-top: 2%; /* Liquid margin */
+    margin-bottom: 2%; /* Liquid margin */
+    color: rgb(255, 255, 255);
+}
+
+/* Styling for the main content */
+main {
+    flex: 1; /* Take up remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.wrapper {
+    width: 100%; /* Set width to 100% */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 2vw; /* Use viewport width units for margin */
+}
+
+.container {
+    text-align: center;
+    padding-bottom: 5%; /* Liquid padding */
+    padding-top: 2.5%; /* Liquid padding */
+    left: 50%;
+}
+
+.container h2 {
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    padding-bottom: 2.5%; /* Liquid padding */
+    padding-top: 1%; /* Liquid padding */
+}
+
+.container p {
+    text-align: center;
+    padding-bottom: 2.5%; /* Liquid padding */
+    padding-top: 0.5%; /* Liquid padding */
+}
+
+img {
+    width: 80%; /* Set image width to 80% of the parent container */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+footer {
+    background-color: #010f20;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0; /* Liquid padding */
+}
+
+.image-carousel {
+    width: 80%; /* Set width to 80% of the parent container */
+    max-width: 800px; /* Limit maximum width */
+    margin: 2% auto; /* Center the carousel horizontally */
+    overflow: hidden; /* Hide overflow content */
+    display: flex; /* Use flexbox to display images in a row */
+    justify-content: space-between; /* Distribute space evenly between images */
+}
+
+.image-carousel img {
+    width: 18%; /* Set image width to 18% of the carousel to leave space between images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.button {
+    background-color: #110244;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px; /* Add letter-spacing */
+    transition: background-color 0.3s ease,letter-spacing 0.3s ease;
+    
+}
+
+.button:hover {
+    background-color: #00111f; /* Darken the background color on hover */
+    letter-spacing: 2px;
+    transition: letter-spacing 0.3s ease;
+}
+/* Styling for forms */
+form {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    max-width: 400px; /* Limit maximum width */
+}
+
+form label {
+    display: block; /* Make labels block-level */
+    margin-bottom: 5px; /* Margin bottom */
+    color: #110244; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    margin-bottom: 10px; /* Margin bottom */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing */
+}
+
+form input[type="submit"] {
+    background-color: #110244; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition */
+}
+
+form input[type="submit"]:hover {
+    background-color: #00111f; /* Darker button background color on hover */
+}
+#shipping,
+#message {
+    resize: none; /* Prevent resizing */
+}

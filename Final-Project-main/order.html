@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Sare.speaker</title>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sare.speaker</h1>
+        <h2>Order Your Speaker</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form class="order">
+                <label for="speaker-type">Select Speaker Type:</label>
+                <select id="speaker-type" name="speaker-type">
+                    <option value="standard">1.5' Tweeter Mono Audio Speaker</option>
+                    <option value="premium">Premium 6' Dual Speaker Stereo System</option>
+                    <option value="custom">Custom Speaker</option>
+                </select><br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1"><br><br>
+                <label for="shipping">Shipping Address:</label><br>
+                <textarea id="shipping" name="shipping" rows="4" cols="50"></textarea><br><br>
+                <input class="button" type="submit" value="Order Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2050 by nobody. All rights reversed.</p>
+    </footer>
+</body>
+</html>
