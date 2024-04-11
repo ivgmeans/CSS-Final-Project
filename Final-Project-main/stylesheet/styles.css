@@ -75,6 +75,12 @@ main {
     align-items: center; /* Center content horizontally */
 }
 
+p, .order, .contact{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .wrapper {
     width: 100%; /* Set width to 100% */
     display: flex;
@@ -101,17 +107,22 @@ main {
     text-align: center;
     padding-bottom: 2.5%; /* Liquid padding */
     padding-top: 0.5%; /* Liquid padding */
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 img {
     width: 80%; /* Set image width to 80% of the parent container */
     display: block; /* Center the image */
     margin: 0 auto; /* Center the image horizontally */
-    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    border-radius: 15%;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), border-radius 0.3s;
 }
 
 img:hover {
-    transform: scale(1.1); /* Scale up image on hover */
+    transform: scale(1.05); /* Scale up image on hover */
+    border-radius: 5%;
 }
 
 footer {
